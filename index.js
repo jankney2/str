@@ -11,7 +11,7 @@ app.use(express.json());
 app.listen(PORT, () => console.log("listening on ", PORT));
 
 app.get("/home", async (req, res) => {
-  res.status(200).sendfile("./home.html");
+  res.status(200).sendFile("./home.html");
 });
 
 app.post("/create-checkout-session", async (req, res) => {
